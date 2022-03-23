@@ -1,0 +1,12 @@
+require 'bigdecimal'
+
+require_relative '../errors/invalid_coin_inserted'
+require_relative '../errors/invalid_product_selected'
+require_relative '../errors/out_of_stock_product_selected'
+require_relative '../errors/insufficient_balance'
+require_relative '../helpers/print_helper'
+require_relative '../utility/add_money'
+require_relative '../services/insert_coin_service'
+require_relative '../services/buy_product_service'
+require_relative '../services/return_change_service'
+require_relative '../vending_machine'
