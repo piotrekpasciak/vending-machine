@@ -1,7 +1,7 @@
 class BuyProductService
   def initialize(products:, coins:, user_balance:, user_input:)
     @products     = products
-    @coins        = coins
+    @coins        = coins.clone.map(&:clone)
     @user_balance = user_balance
     @user_input   = user_input
   end
